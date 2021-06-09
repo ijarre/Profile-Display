@@ -1,12 +1,8 @@
-import React from 'react'
-import './UserTableList.scss'
+import React from 'react';
+import './UserTableList.scss';
 
-const UserTableList = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const UserTableList: React.FC = () => {
+    return <div></div>;
+};
 
-export default UserTableList
+export default UserTableList;

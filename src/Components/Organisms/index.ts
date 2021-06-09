@@ -1,3 +1,3 @@
-import UserTableList from "./UserTableList/UserTableList";
+import UserTableList from './UserTableList/UserTableList';
 
-export * from './UserTableList'
+export { UserTableList };
