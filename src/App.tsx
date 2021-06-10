@@ -1,9 +1,9 @@
-import { UserCard } from './Components';
+import { Main } from './features';
 
 function App() {
     return (
         <div className="app">
-            <UserCard />
+            <Main />
         </div>
     );
 }
