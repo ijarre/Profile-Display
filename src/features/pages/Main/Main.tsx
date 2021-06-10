@@ -27,7 +27,7 @@ const Main: React.FC = () => {
                     );
                 })}
             </div>
-            <div className="main-detail">
+            <div className="main-detail p-2">
                 {selectedUuid !== '' &&
                     users.data?.results
                         .filter((el: any) => el.login.uuid === selectedUuid)

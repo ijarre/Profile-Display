@@ -1,11 +1,13 @@
 .main-container {
-    width: 75%;
+    width: 80%;
     height: 75vh;
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 10vh auto;
     border-radius: 10px;
     border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     .main-cards {
         display: flex;
         flex-wrap: wrap;
@@ -15,9 +17,14 @@
         > * {
             margin: 3px 5px;
         }
+        background-color: #fffdd1;
     }
     .main-detail {
         display: flex;
+
         align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #e3bc9a;
     }
 }
