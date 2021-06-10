@@ -1,13 +1,11 @@
-import React from 'react';
-
-
+import { UserCard } from './Components';
 
 function App() {
-  return (
-    <div className="app">
-      <h1>Hello World</h1>
-    </div>
-  );
+    return (
+        <div className="app">
+            <UserCard />
+        </div>
+    );
 }
 
 export default App;

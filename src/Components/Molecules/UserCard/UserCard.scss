@@ -1,0 +1,30 @@
+$darkgreen1: #2f3e46;
+$darkgreen2: #354f52;
+$midgreen: #52796f;
+$lightgreen1: #84a98c;
+$lightgreen2: #cad2c5;
+
+* {
+    box-sizing: border-box;
+}
+.card-container {
+    background-color: $darkgreen2;
+    color: black;
+    width: 13em;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 400;
+    img {
+        width: 6em;
+        border-radius: 50%;
+    }
+    p {
+        background-color: $lightgreen2;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}

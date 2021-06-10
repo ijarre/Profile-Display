@@ -1,1 +1,2 @@
-export * from './Organisms'
+export * from './Organisms';
+export * from './Molecules';

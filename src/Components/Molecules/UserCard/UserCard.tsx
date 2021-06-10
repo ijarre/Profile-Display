@@ -1,9 +1,14 @@
 import React from 'react';
+import './UserCard.scss';
 
 const UserCard: React.FC = () => {
     return (
-        <div>
-            <h1>This is UserCard</h1>
+        <div className="card-container p-3">
+            <img
+                src="https://randomuser.me/api/portraits/med/men/78.jpg"
+                alt=""
+            />
+            <p className="p-1">Adam Kumis</p>
         </div>
     );
 };
