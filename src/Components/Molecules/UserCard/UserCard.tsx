@@ -1,12 +1,17 @@
 import React from 'react';
 import './UserCard.scss';
 
-const UserCard: React.FC = () => {
+interface UserCardProps {
+    img: string;
+    name: string;
+}
+
+const UserCard: React.FC<UserCardProps> = (props) => {
     return (
         <div className="card-container p-2">
-            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" />
+            <img src={props.img} alt="" />
             <div className="name">
-                <p className="p-1">Adam Kumis</p>
+                <p className="p-1">{props.name}</p>
             </div>
         </div>
     );
