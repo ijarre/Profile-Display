@@ -10,11 +10,38 @@
     .detail {
         display: grid;
         margin-top: 15px;
-        grid-template-columns: 25% 1fr;
+        grid-template-columns: 2fr 1fr;
         gap: 5px 0px;
         > * {
-            border: 1px gray solid;
             padding: 0.2rem;
         }
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        font-family: 'Roboto Mono', monospace;
+        .title {
+            font-weight: 700;
+        }
+        :nth-child(3) {
+            background-color: #ff0054;
+            color: whitesmoke;
+        }
+        :nth-child(1) {
+            background-color: #390099;
+            color: whitesmoke;
+        }
+        :nth-child(5) {
+            background-color: #ff5400;
+            color: whitesmoke;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        :nth-child(7) {
+            background-color: #dda302;
+            color: whitesmoke;
+        }
+        // :nth-child(2n) {
+        //     background-color: rgba(205, 238, 204, 0.171);
+        // }
     }
 }

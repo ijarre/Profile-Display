@@ -6,13 +6,13 @@ const UserDetail: React.FC = () => {
         <div className="user-detail">
             <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" />
             <div className="detail">
-                <span>Full Name</span>
+                <span className="title p-1">Full Name</span>
                 <span>Adam Kumis</span>
-                <span>Telephone</span>
+                <span className="title p-1">Telephone</span>
                 <span>0888787878</span>
-                <span>Email Address</span>
+                <span className="title p-1">Email Address</span>
                 <span>adam.kumis@tebel.com</span>
-                <span>Country</span>
+                <span className="title p-1">Country</span>
                 <span>Jember</span>
             </div>
         </div>

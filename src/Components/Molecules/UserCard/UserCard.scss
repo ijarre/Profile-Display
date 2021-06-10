@@ -17,7 +17,10 @@ $lightgreen2: #cad2c5;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    font-weight: 400;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
     img {
         width: 6em;
         border-radius: 50%;
@@ -26,5 +29,9 @@ $lightgreen2: #cad2c5;
         background-color: $lightgreen2;
         margin-top: 10px;
         border-radius: 5px;
+        width: 100%;
+        letter-spacing: 1px;
+        position: relative;
+        top: 5px;
     }
 }
