@@ -3,7 +3,7 @@ import './UserCard.scss';
 
 const UserCard: React.FC = () => {
     return (
-        <div className="card-container p-3">
+        <div className="card-container p-2">
             <img
                 src="https://randomuser.me/api/portraits/med/men/78.jpg"
                 alt=""
