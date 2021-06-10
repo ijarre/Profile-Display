@@ -1,24 +1,20 @@
-.container {
-    width: 40%;
-    margin: 10px auto;
-    .user-detail {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+.user-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-        img {
-            max-width: 10em;
-            border-radius: 10px;
-        }
-        .detail {
-            display: grid;
-            margin-top: 15px;
-            grid-template-columns: 25% 1fr;
-            gap: 5px 0px;
-            > * {
-                border: 1px gray solid;
-                padding: 0.2rem;
-            }
+    img {
+        max-width: 10em;
+        border-radius: 10px;
+    }
+    .detail {
+        display: grid;
+        margin-top: 15px;
+        grid-template-columns: 25% 1fr;
+        gap: 5px 0px;
+        > * {
+            border: 1px gray solid;
+            padding: 0.2rem;
         }
     }
 }
