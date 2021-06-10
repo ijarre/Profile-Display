@@ -12,7 +12,7 @@ interface UserDetailProps {
 const UserDetail: React.FC<UserDetailProps> = (props) => {
     return (
         <div className="user-detail">
-            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" />
+            <img src={props.img} alt="" />
             <div className="detail">
                 <span className="title p-1">Full Name</span>
                 <span>{props.name}</span>

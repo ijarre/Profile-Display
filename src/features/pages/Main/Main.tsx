@@ -7,13 +7,12 @@ import { getUser } from './MainService';
 
 const Main: React.FC = () => {
     const [page] = useState<number>(1);
-    const [selectedId, setSelectedId] = useState<string>('');
+    const [selectedUuid, setSelectedUuid] = useState<string>('');
     const users = useQuery(['users', page], () => getUser(page), {
         keepPreviousData: true
     });
     return (
         <div className="main-container p-2">
-            {console.log(users.data)}
             <div className="main-cards">
                 {users.data?.results.map((user: any, i: number) => {
                     return (
@@ -22,24 +21,26 @@ const Main: React.FC = () => {
                             img={user.picture.large}
                             name={`${user.name.title}.${user.name.first} ${user.name.last}`}
                             onCardClick={() => {
-                                setSelectedId(user.id.value);
+                                setSelectedUuid(user.login.uuid);
                             }}
                         />
                     );
                 })}
             </div>
             <div className="main-detail">
-                {selectedId !== '' &&
+                {selectedUuid !== '' &&
                     users.data?.results
-                        .filter((el: any) => el.id.value !== selectedId)
+                        .filter((el: any) => el.login.uuid === selectedUuid)
                         .map((user: any) => {
-                            <UserDetail
-                                country={user.location.country}
-                                email={user.email}
-                                img={user.picture.large}
-                                name={`${user.name.title}.${user.name.first} ${user.name.last}`}
-                                telephone={user.phone}
-                            />;
+                            return (
+                                <UserDetail
+                                    country={user.location.country}
+                                    email={user.email}
+                                    img={user.picture.large}
+                                    name={`${user.name.title}.${user.name.first} ${user.name.last}`}
+                                    telephone={user.phone}
+                                />
+                            );
                         })}
             </div>
         </div>
