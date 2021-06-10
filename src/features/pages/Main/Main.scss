@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 10vh auto;
-
+    border-radius: 10px;
     border: 1px solid black;
     .main-cards {
         display: flex;
@@ -15,5 +15,9 @@
         > * {
             margin: 3px 5px;
         }
+    }
+    .main-detail {
+        display: flex;
+        align-items: center;
     }
 }

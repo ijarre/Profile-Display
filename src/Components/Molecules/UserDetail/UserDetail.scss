@@ -4,8 +4,9 @@
     flex-direction: column;
 
     img {
-        max-width: 10em;
+        width: 11.5em;
         border-radius: 10px;
+        align-self: center;
     }
     .detail {
         display: grid;
@@ -23,21 +24,21 @@
             font-weight: 700;
         }
         :nth-child(3) {
-            background-color: #ff0054;
+            background-color: #ffb703;
             color: whitesmoke;
         }
         :nth-child(1) {
-            background-color: #390099;
+            background-color: #023047;
             color: whitesmoke;
         }
         :nth-child(5) {
-            background-color: #ff5400;
+            background-color: #219ebc;
             color: whitesmoke;
             font-size: 1.1rem;
             white-space: nowrap;
         }
         :nth-child(7) {
-            background-color: #dda302;
+            background-color: #fb8500;
             color: whitesmoke;
         }
         // :nth-child(2n) {
