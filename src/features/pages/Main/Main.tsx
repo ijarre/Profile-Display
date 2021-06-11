@@ -16,7 +16,9 @@ const Main: React.FC = () => {
         <div className="main-container p-2">
             <div className="main-cards">
                 {users.isLoading || users.isFetching ? (
-                    <span>Loading Data...</span>
+                    <div className="loading">
+                        <span>Loading Data...</span>
+                    </div>
                 ) : (
                     users.data?.results.map((user: any, i: number) => {
                         return (
@@ -68,10 +70,9 @@ const Main: React.FC = () => {
                             );
                         })
                 ) : (
-                    <span className="no-select">
-                        {' '}
-                        Click one card to display it here
-                    </span>
+                    <div className="no-select">
+                        <span> Click one card to display it here</span>
+                    </div>
                 )}
             </div>
         </div>

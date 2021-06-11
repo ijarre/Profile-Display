@@ -30,7 +30,7 @@
         }
     }
     .main-detail {
-        min-width: 32em;
+        min-width: 30em;
         display: flex;
         align-items: center;
         border-top-right-radius: 10px;
@@ -39,7 +39,27 @@
     }
 
     .no-select {
+        width: 15em;
+        display: flex;
         font-size: 2rem;
         font-family: 'Roboto Mono', monospace;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .main-cards {
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+        .main-detail {
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+        .main-pagination {
+            grid-row: 3;
+        }
+
+        .no-select {
+            width: 1em;
+        }
     }
 }
